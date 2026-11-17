@@ -104,8 +104,8 @@ button:focus-visible, a:focus-visible, select:focus-visible, summary:focus-visib
 }
 
 .container {
-    width: min(1232px, calc(100% - 80px));
-    margin: auto
+    width: min(1102px, calc(100% - 32px));
+    margin: 0 auto
 }
 
 .section {
