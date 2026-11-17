@@ -4495,8 +4495,36 @@ dialog .button {
 
 .legal-nav {
     max-height: calc(100vh - 125px);
+    padding: 20px 12px 20px 20px
+}
+
+.legal-nav-scroll {
+    max-height: calc(100vh - 167px);
+    padding-right: 12px;
     overflow-y: auto;
-    overscroll-behavior: contain
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #d6bd7d #fbfaf7;
+    scrollbar-gutter: stable
+}
+
+.legal-nav-scroll::-webkit-scrollbar {
+    width: 6px
+}
+
+.legal-nav-scroll::-webkit-scrollbar-track {
+    background: var(--paper);
+    border-radius: 999px;
+    margin-block: 4px
+}
+
+.legal-nav-scroll::-webkit-scrollbar-thumb {
+    background: #d6bd7d;
+    border-radius: 999px
+}
+
+.legal-nav-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--gold)
 }
 
 .legal-nav a {
@@ -4515,6 +4543,13 @@ dialog .button {
     }
 
     .legal-nav {
+        max-height: none;
+        padding: 19px;
+        overflow: visible
+    }
+
+    .legal-nav-scroll {
+        display: contents;
         max-height: none;
         overflow: visible
     }
