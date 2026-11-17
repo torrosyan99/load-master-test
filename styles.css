@@ -388,7 +388,10 @@ button:focus-visible, a:focus-visible, select:focus-visible, summary:focus-visib
 }
 
 .nav .button .icon {
-    display: none
+    display: block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px
 }
 
 .menu-button {
@@ -4264,12 +4267,9 @@ dialog .button {
     margin-bottom: 35px
 }
 
-.gallery-copy .download-actions {
+.gallery-copy .hero-actions {
+    justify-content: flex-start;
     flex-wrap: wrap
-}
-
-.gallery-copy .button {
-    font-size: 12px
 }
 
 .story-art {
